@@ -19,5 +19,6 @@ META.yml
 README
 t/Text-Unicode-Test-BoxDrawing/01-use.t
 t/Text-Unicode-Test-BoxDrawing/02-version.t
+t/Text-Unicode-Test-BoxDrawing/03-list.t
 xt/Text-Unicode-Test-BoxDrawing/01-pod_coverage.t
 xt/Text-Unicode-Test-BoxDrawing/02-pod.t
