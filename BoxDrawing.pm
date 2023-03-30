@@ -5,7 +5,7 @@ use warnings;
 
 use English;
 use Error::Pure qw(err);
-use List::MoreUtils qw(none);
+use List::Util qw(none);
 use Readonly;
 use Unicode::UTF8 qw(decode_utf8);
 

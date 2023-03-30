@@ -19,7 +19,7 @@ readme_from 'BoxDrawing.pm';
 recursive_author_tests('xt');
 requires 'English' => 0;
 requires 'Error::Pure' => 0;
-requires 'List::MoreUtils' => 0;
+requires 'List::Util' => 1.33;
 requires 'Readonly' => 0;
 requires 'Unicode::UTF8' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Text-Unicode-Test-BoxDrawing/issues';
