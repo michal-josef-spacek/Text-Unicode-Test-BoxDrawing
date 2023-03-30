@@ -28,7 +28,7 @@ requires:
   Readonly: 0
   Unicode::UTF8: 0
 resources:
-  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Text-Unicode-Test-BoxDrawing
+  bugtracker: https://github.com/michal-josef-spacek/Text-Unicode-Test-BoxDrawing/issues
   homepage: https://github.com/michal-josef-spacek/Text-Unicode-Test-BoxDrawing
   license: http://opensource.org/licenses/bsd-license.php
   repository: git://github.com/michal-josef-spacek/Text-Unicode-Test-BoxDrawing
