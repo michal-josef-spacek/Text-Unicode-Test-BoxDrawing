@@ -26,7 +26,9 @@ sub new {
 sub list {
 	my $self = shift;
 
-	return keys %{$self->_drawing_types};
+	my @drawing_types = sort keys %{$self->_drawing_types};
+
+	return @drawing_types;
 }
 
 sub print {
