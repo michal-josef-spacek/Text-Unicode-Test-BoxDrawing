@@ -1,0 +1,101 @@
+NAME
+    Text::Unicode::Test::BoxDrawing - Unicode Box Drawing testing class.
+
+SYNOPSIS
+     use Text::Unicode::Test::BoxDrawing;
+
+     my $obj = Text::Unicode::Test::BoxDrawing->new(%params);
+     my @drawing_types = $obj->list;
+     my $string = $obj->print($drawing_type);
+     my $string = $obj->print_all;
+
+METHODS
+  "new"
+     my $obj = Text::Unicode::Test::BoxDrawing->new(%params);
+
+    Constructor.
+
+    Returns instance of object.
+
+  "list"
+     my @drawing_types = $obj->list;
+
+    Get sorted list of drawing types.
+
+    Returns list of strings.
+
+  "print"
+     my $string = $obj->print($drawing_type);
+
+    Get one drawing defined by $drawing_type.
+
+    Returns string
+
+  "print_all"
+     my $string = $obj->print_all;
+
+    Get all drawings.
+
+    Returns string.
+
+ERRORS
+     print():
+             Drawing type '%s' doesn't exist.
+
+EXAMPLE
+     use strict;
+     use warnings;
+
+     use Text::Unicode::Test::BoxDrawing;
+
+     # Object.
+     my $obj = Text::Unicode::Test::BoxDrawing->new;
+
+     # Get list.
+     my @drawing_types = $obj->list;
+
+     # Print out.
+     print join "\n", @drawing_types;
+     print "\n";
+
+     # Output like:
+     # complex1
+     # complex2
+     # complex3
+     # complex4
+     # simple_arc_box
+     # simple_bold_box
+     # simple_box
+     # simple_box_with_crossing
+     # simple_dashed_box
+     # simple_doubled_box
+     # simple_doubled_box_horizontal
+     # simple_doubled_box_vertical
+     # simple_filled_box
+     # simple_filled_dark_shade_box
+     # simple_filled_light_shade_box
+     # simple_filled_medium_shade_box
+     # spark_horizontal
+     # spark_vertical
+     # squares_big
+     # squares_small
+
+DEPENDENCIES
+    English, Error::Pure, List::Util, Readonly, Unicode::UTF8.
+
+REPOSITORY
+    <https://github.com/michal-josef-spacek/Text-Unicode-Test-BoxDrawing>
+
+AUTHOR
+    Michal Josef Špaček <mailto:skim@cpan.org>
+
+    <http://skim.cz>
+
+LICENSE AND COPYRIGHT
+    © 2020-2023 Michal Josef Špaček
+
+    BSD 2-Clause License
+
+VERSION
+    0.01
+

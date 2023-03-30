@@ -197,3 +197,132 @@ END
 }
 
 1;
+
+__END__
+
+=pod
+
+=encoding utf8
+
+=head1 NAME
+
+Text::Unicode::Test::BoxDrawing - Unicode Box Drawing testing class.
+
+=head1 SYNOPSIS
+
+ use Text::Unicode::Test::BoxDrawing;
+
+ my $obj = Text::Unicode::Test::BoxDrawing->new(%params);
+ my @drawing_types = $obj->list;
+ my $string = $obj->print($drawing_type);
+ my $string = $obj->print_all;
+
+=head1 METHODS
+
+=head2 C<new>
+
+ my $obj = Text::Unicode::Test::BoxDrawing->new(%params);
+
+Constructor.
+
+Returns instance of object.
+
+=head2 C<list>
+
+ my @drawing_types = $obj->list;
+
+Get sorted list of drawing types.
+
+Returns list of strings.
+
+=head2 C<print>
+
+ my $string = $obj->print($drawing_type);
+
+Get one drawing defined by C<$drawing_type>.
+
+Returns string
+
+=head2 C<print_all>
+
+ my $string = $obj->print_all;
+
+Get all drawings.
+
+Returns string.
+
+=head1 ERRORS
+
+ print():
+         Drawing type '%s' doesn't exist.
+
+=head1 EXAMPLE
+
+=for comment filename=list_drawing_types.pl
+
+ use strict;
+ use warnings;
+
+ use Text::Unicode::Test::BoxDrawing;
+
+ # Object.
+ my $obj = Text::Unicode::Test::BoxDrawing->new;
+
+ # Get list.
+ my @drawing_types = $obj->list;
+
+ # Print out.
+ print join "\n", @drawing_types;
+ print "\n";
+
+ # Output like:
+ # complex1
+ # complex2
+ # complex3
+ # complex4
+ # simple_arc_box
+ # simple_bold_box
+ # simple_box
+ # simple_box_with_crossing
+ # simple_dashed_box
+ # simple_doubled_box
+ # simple_doubled_box_horizontal
+ # simple_doubled_box_vertical
+ # simple_filled_box
+ # simple_filled_dark_shade_box
+ # simple_filled_light_shade_box
+ # simple_filled_medium_shade_box
+ # spark_horizontal
+ # spark_vertical
+ # squares_big
+ # squares_small
+
+=head1 DEPENDENCIES
+
+L<English>,
+L<Error::Pure>,
+L<List::Util>,
+L<Readonly>,
+L<Unicode::UTF8>.
+
+=head1 REPOSITORY
+
+L<https://github.com/michal-josef-spacek/Text-Unicode-Test-BoxDrawing>
+
+=head1 AUTHOR
+
+Michal Josef Špaček L<mailto:skim@cpan.org>
+
+L<http://skim.cz>
+
+=head1 LICENSE AND COPYRIGHT
+
+© 2020-2023 Michal Josef Špaček
+
+BSD 2-Clause License
+
+=head1 VERSION
+
+0.01
+
+=cut
