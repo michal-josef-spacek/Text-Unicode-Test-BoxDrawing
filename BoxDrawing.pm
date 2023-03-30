@@ -275,7 +275,7 @@ Returns string.
  print join "\n", @drawing_types;
  print "\n";
 
- # Output like:
+ # Output:
  # complex1
  # complex2
  # complex3
