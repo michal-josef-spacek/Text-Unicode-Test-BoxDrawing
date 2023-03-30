@@ -16,6 +16,8 @@ print join "\n", @drawing_types;
 print "\n";
 
 # Output:
+# braille_hello_world
+# braille_mapping
 # complex1
 # complex2
 # complex3

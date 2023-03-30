@@ -56,6 +56,14 @@ sub _drawing_types {
 	my $self = shift;
 
 	return {
+		# From https://github.com/ndemou/bconv
+		'braille_hello_world' => <<'END',
+⠓⠑⠇⠇⠕⠀⠺⠕⠗⠇⠙
+END
+		# From https://en.wikipedia.org/wiki/Braille_ASCII
+		'braille_mapping' => <<'END',
+⠀⠁⠂⠃⠄⠅⠆⠇⠈⠉⠊⠋⠌⠍⠎⠏⠐⠑⠒⠓⠔⠕⠖⠗⠘⠙⠚⠛⠜⠝⠞⠟⠠⠡⠢⠣⠤⠥⠦⠧⠨⠩⠪⠫⠬⠭⠮⠯⠰⠱⠲⠳⠴⠵⠶⠷⠸⠹⠺⠻⠼⠽⠾⠿
+END
 		# From https://en.wikipedia.org/wiki/Template:Box-drawing_sample
 		'complex1' => <<'END',
 ┌───────────────────┐
@@ -276,6 +284,8 @@ Returns string.
  print "\n";
 
  # Output:
+ # braille_hello_world
+ # braille_mapping
  # complex1
  # complex2
  # complex3

@@ -11,6 +11,8 @@ my @ret = $obj->list;
 is_deeply(
 	\@ret,
 	[
+		'braille_hello_world',
+		'braille_mapping',
 		'complex1',
 		'complex2',
 		'complex3',
